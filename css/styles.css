@@ -1,0 +1,35 @@
+html {
+    box-sizing:border-box;
+}
+
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+.first, .second, .third {
+    color: red;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: lightgreen;
+}
+.second {
+    color: blue;
+}
+
+@media screen and (min-width: 768px) {
+    .first, .second, .third {
+        padding: 5px;
+        background-color: lightyellow;
+        border: 2px solid blue;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .second {
+        color: lightpurple;
+        background-color: pink;
+    }
+}
